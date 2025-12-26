@@ -24,7 +24,30 @@ public class CheckUtilsMethods {
         log(Arrays.toString(filterArray));
     }
 
-    private void log (String message) {
+    public void checkArrayCounter() {
+        String[] students = new String[15];
+        students[0] = "John";
+        students[1] = "Mary";
+        students[2] = "Mary";
+        students[3] = "Jane";
+        students[4] = "John";
+        students[5] = "Jane";
+        students[6] = "Jane";
+        students[7] = "John";
+        students[8] = "John";
+        students[9] = "Jane";
+        students[10] = "Jane";
+        students[11] = "John";
+        students[12] = "Mary";
+        students[13] = "John";
+        students[14] = "Jane";
+
+        log(Arrays.toString(students));
+
+        log(String.valueOf(CustomCollectionUtils.getMapWithCountArrayElements(students)));
+    }
+
+    private void log(String message) {
         System.out.println(message);
     }
 }
